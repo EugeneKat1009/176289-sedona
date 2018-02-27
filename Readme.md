@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Евгений Катуша](https://up.htmlacademy.ru/htmlcss/20/user/176289).
-* Наставник: `Неизвестно`.
+* Наставник: [Григорий Гусаров](https://htmlacademy.ru/profile/gogusarov).
 
 ---
 
