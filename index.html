@@ -23,56 +23,56 @@
     <main class="container">
       <h1 class="visualy-hidden">Sedona</h1>
 
-      <section class="reasons">
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-        <ul class="reasons-items">
-          <li class="features-item">
-            <h3>Настоящий городок</h3>
-            <p>№1</p>
-            <p>Седона - не аттракцион для туристов. Там течет своя жизнь</p>
-            <img src="img/reason-1" width="800" height="257" alt="Причина №1">
-          </li>
-          <li class="features-item">
-            <h3>Там есть мост дьявола</h3>
-            <p>№2</p>
-            <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
-            <img src="img/reason-2" width="800" height="257" alt="Причина №2">
-          </li>
-          <li class="features-item">
-            <h3>Небольшая площадь</h3>
-            <p>№3</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </li>
-          <li class="features-item">
-            <h3>Крассивая дорога</h3>
-            <p>№4</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </li>
-          <li class="features-item">
-            <h3>Мало туристов</h3>
-            <p>№5</p>
-            <p>Большинсво едет в Гранд Каньон и толпится там</p>
-          </li>
-        </ul>
-      </section>
-
       <section class="features">
-        <h2 class="visualy-hidden">Преимущества</h2>
-        <ul class="features-items">
-          <li class="features-item">
-            <h3>Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле. Все как кино!</p>
-          </li>
-          <li class="features-item">
-            <h3>Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-          <li class="features-item">
-            <h3>Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
-          </li>
-        </ul>
+        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div class="features-items">
+          <h3>Настоящий городок</h3>
+          <p>№1</p>
+          <p>Седона - не аттракцион для туристов. Там течет своя жизнь</p>
+          <img src="img/reason-1" width="800" height="257" alt="Причина №1">
+        </div>
+        <div class="features-items">
+          <ul class="features-items-list">
+            <li class="features-item">
+              <h3>Жилье</h3>
+              <p>Рекомендуем пожить в настоящем мотеле. Все как кино!</p>
+            </li>
+            <li class="features-item">
+              <h3>Еда</h3>
+              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <li class="features-item">
+              <h3>Сувениры</h3>
+              <p>Не только китайского, но и местного производства!</p>
+            </li>
+          </ul>
+        </div>
+        <div class="features-items">
+          <h3>Там есть мост дьявола</h3>
+          <p>№2</p>
+          <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+          <img src="img/reason-2" width="800" height="257" alt="Причина №2">
+        </div>
+        <div class="features-items">
+          <ul class="features-items-list">
+            <li class="features-item">
+              <h3>Небольшая площадь</h3>
+              <p>№3</p>
+              <p>Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="features-item">
+              <h3>Крассивая дорога</h3>
+              <p>№4</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="features-item">
+              <h3>Мало туристов</h3>
+              <p>№5</p>
+              <p>Большинсво едет в Гранд Каньон и толпится там</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="booking">
@@ -104,13 +104,19 @@
     </footer>
 
     <section class="modal modal-booking">
-      <form action="get" class="booking-form">
-        <label for="arrival-date">Дата заезда:</label>
-        <input type="date" id="arrival-date" name="arrival-date">
-        <label for="leaving-date">Дата отъезда:</label>
-        <input type="date" id="leaving-date" name="leaving-date">
+      <form action="get" class="booking-form" oninput="children.value=dayscount.value">
+        <label for="date-in">Дата заезда:</label>
+        <input type="date" id="date-in" name="arrival-date" value="date" tabindex="1">
+        <label for="date-out">Дата отъезда:</label>
+        <input type="date" id="date-out" name="leaving-date" value="date" tabindex="2">
+        <label for="adult">Взрослые:</label>
+        <input type="number" id="adult" name="adult" value="3" tabindex="3">
+        <label for="children">Дети</label>
+        <input type="number" id="children" name="children" value="3" tabindex="4">
+        <div class="buttons">
+        <input type="submit" value="Найти">
+        </div>
       </form>
-            <!-- Здесь будет форма -->
     </section>
   </body>
 </html>
