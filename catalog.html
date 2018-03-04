@@ -7,17 +7,15 @@
   <body>
 
     <header class="main-header">
-      <p class="main-header-logo">
-        <a href="index.html" class="main-header-logo-link">
+      <a href="index.html" class="main-header-logo">
         <img src="img/logo.png" width="138" height="70" alt="Sedona">
-        </a>
-      </p>
+      </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="media.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -26,13 +24,44 @@
       <h1 class="visualy-hidden">Поиск гостиницы</h1>
 
       <section class="filters">
-       <h2 class="visually-hidden">Фильтр гостиниц</h2>
+       <h2 class="visually-hidden">Выбор гостиниц по параметрам</h2>
        <!-- Здесь будет форма -->
       </section>
 
-      <section class="results">
-        <h2 class="visually-hidden">Результаты поиска</h2>
-        <!-- Здесь будет форма -->
+      <section class="search-results">
+        <h2 class="visually-hidden">Результаты поиска гостиниц</h2>
+        <p class="results">
+          <span class="result-title">Найдено:</span>
+          <span class="result-amount">3</span>
+        </p>
+        <p class="sorting">Сортировка:</p>
+        <ul class="sorting-items">
+          <li class="sorting-item">
+            <button class="sorting-button">
+              По цене
+            </button>
+          </li>
+          <li class="sorting-item">
+            <button class="sorting-button">
+              По типу
+            </button>
+          </li>
+          <li class="sorting-item">
+            <button class="sorting-button">
+              По рейтингу
+            </button>
+          </li>
+          <li class="sorting-item">
+            <button class="sorting-button soring-button-up">
+              up
+            </button>
+          </li>
+          <li class="sorting-item">
+            <button class="sorting-button soring-button-down">
+              down
+            </button>
+          </li>
+        </ul>
       </section>
 
       <section class="hotels">
@@ -44,22 +73,22 @@
                 <img src="img/hotel-1.jpg" width="135" height="90" alt="Amara Resort & Spa">
               </a>
             </p>
-            <h3>
+            <h3 class="hotel-title">
               <a href="hotel-1.html">
                 <span class="hotel-name">Amara Resort & Spa</span>
               </a>
             </h3>
             <p class="hotel-description">
-              <span>Гостиница</span>
-              <span>от 4000 р.</span>
+              <span class="hotel-type">Гостиница</span>
+              <span class="hotel-price">от 4000 р.</span>
             </p>
             <p class="hotel-booking">
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button booking-description" href="#">Подробнее</a>
+              <button class="button booking-button">Забронировать</button>
             </p>
-            <div class="hotel-rating">
-              <span>****</span>
-              <span>Рейтинг: 8,5</span>
+            <div class="rating">
+              <span class="hotel-stars">****</span>
+              <span class="hotel-rating">Рейтинг: 8,5</span>
             </div>
           </li>
 
@@ -69,22 +98,22 @@
                 <img src="img/hotel-2.jpg" width="135" height="90" alt="Desert Quail Inn">
               </a>
             </p>
-            <h3>
+            <h3 class="hotel-title">
               <a href="hotel-2.html">
                 <span class="hotel-name">Desert Quail Inn</span>
               </a>
             </h3>
             <p class="hotel-description">
-              <span>Мотель</span>
-              <span>от 3000 р.</span>
+              <span class="hotel-type">Мотель</span>
+              <span class="hotel-price">от 3000 р.</span>
             </p>
             <p class="hotel-booking">
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button booking-description" href="#">Подробнее</a>
+              <button class="button booking-button">Забронировать</button>
             </p>
-            <div class="hotel-rating">
-              <span>***</span>
-              <span>Рейтинг: 8,9</span>
+            <div class="rating">
+              <span class="hotel-stars">***</span>
+              <span class="hotel-rating">Рейтинг: 8,9</span>
             </div>
           </li>
 
@@ -94,41 +123,38 @@
                 <img src="img/hotel-3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
               </a>
             </p>
-            <h3>
+            <h3 class="hotel-title">
               <a href="hotel-3.html">
                 <span class="hotel-name">Villas at Poco Diablo</span>
               </a>
             </h3>
             <p class="hotel-description">
-              <span>Аппартаменты</span>
-              <span>от 2000 р.</span>
+              <span class="hotel-type">Аппартаменты</span>
+              <span class="hotel-price">от 2000 р.</span>
             </p>
             <p class="hotel-booking">
-              <a class="button" href="#">Подробнее</a>
-              <a class="button" href="#">Забронировать</a>
+              <a class="button booking-description" href="#">Подробнее</a>
+              <button class="button booking-button">Забронировать</button>
             </p>
-            <div class="hotel-rating">
-              <span>**</span>
-              <span>Рейтинг: 9,2</span>
+            <div class="rating">
+              <span class="hotel-stars">**</span>
+              <span class="hotel-rating">Рейтинг: 9,2</span>
             </div>
           </li>
         </ul>
       </section>
-
     </main>
 
     <footer class="main-footer">
       <p class="hashtag">
         <a href="#">#visitsedona</a>
       </p>
-      <div class="footer-social">
-        <ul>
+        <ul class="social-items">
           <li><a href="" class="social-button">Twitter</a></li>
           <li><a href="" class="social-button">Facebook</a></li>
           <li><a href="" class="social-button">Youtube</a></li>
         </ul>
-      </div>
-      <p class="footer-copyright">
+      <p class="developed">
         <b>Website by</b>
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTMLAcademy</a>
       </p>
