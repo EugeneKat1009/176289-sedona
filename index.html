@@ -9,8 +9,8 @@
 <body>
 
   <header class="main-header">
-    <a href="" class="main-header-logo">
-        <img src="img/logo.png" width="138" height="70" alt="Sedona">
+    <a href="" class="main-header-logo" aria-label="Город Седона">
+        <img src="img/logo.png" width="138" height="70" alt="Город Седона">
       </a>
     <nav class="main-navigation">
       <ul class="site-navigation">
@@ -23,11 +23,11 @@
   </header>
 
   <main class="container">
-    <h1 class="visualy-hidden">Иформация о городе Седона</h1>
+    <h1 class="visually-hidden">Иформация о городе Седона</h1>
 
     <section class="about">
       <div class="about-bg">
-        <img src="img/intro-1200.jpg" width="1200" height="800" alt="Седона">
+        <img src="img/intro-1200.jpg" width="1200" height="800" alt="О городе Седона">
       </div>
       <h2 class="features-intro">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="features-intro-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -39,7 +39,7 @@
           <p class="reasons-text unique-reasons-text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
         </li>
         <li class="photocard">
-          <img src="img/reason-1.jpg" width="800" height="401" alt="Причина 1">
+          <img src="img/reason-1.jpg" width="800" height="401" alt="Причина посетить Седону №1">
         </li>
       </ul>
       <ul class="features-list">
@@ -58,7 +58,7 @@
       </ul>
       <ul class="reasons-list">
         <li class="photocard">
-          <img src="img/reason-2.jpg" width="800" height="400" alt="Причина 2">
+          <img src="img/reason-2.jpg" width="800" height="400" alt="Причина посетить Седону №2">
         </li>
         <li class="reasons-item">
           <h3 class="reasons-title">Там есть мост дьявола</h3>
@@ -84,6 +84,7 @@
     </section>
 
     <section class="booking">
+      <h1 class="visually-hidden">Забронировать гостиницу в Седоне</h1>
       <h2 class="booking-title">Заинтересовались?</h2>
       <p class="booking-text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="btn-search" type="submit">Поиск гостиницы в Седоне</button>
@@ -98,32 +99,36 @@
       <a href="#">#visitsedona</a>
     </p>
     <ul class="social-items">
-      <li><a href="" class="social-button">Twitter</a></li>
-      <li><a href="" class="social-button">Facebook</a></li>
-      <li><a href="" class="social-button">Youtube</a></li>
+      <li><a href="" class="social-button" aria-label="Twitter">Twitter</a></li>
+      <li><a href="" class="social-button" aria-label="Facebook">Facebook</a></li>
+      <li><a href="" class="social-button" aria-label="Youtube">Youtube</a></li>
     </ul>
     <p class="developed">
       <b>Website by</b>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy">
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy" aria-label="Разаработано HTMLAcademy">
           <img src="img/logo-htmlacademy.svg" class="html-academy-logo" width="115" height="41" alt="HTMLAcademy">
         </a>
     </p>
   </footer>
 
   <section class="modal modal-booking">
-    <h2 class="visualy-hidden">Выбор гостиницы</h2>
-    <form action="get" class="booking-form">
-      <label for="date-in">Дата заезда:</label>
-      <input type="date" id="date-in" name="arrival-date" value="2018-03-03" tabindex="1"><br>
-      <label for="date-out">Дата отъезда:</label>
-      <input type="date" id="date-out" name="leaving-date" value="2018-03-03" tabindex="2"><br>
-      <label for="adult">Взрослые:</label>
-      <input type="number" id="adult" name="adult" value="3" tabindex="3">
-      <label for="children">Дети</label>
-      <input type="number" id="children" name="children" value="3" tabindex="4"><br>
-      <div class="buttons">
-        <button class="btn-submit" type="submit" value="Найти">Найти</button>
-      </div>
+    <h2 class="visually-hidden">Выбор гостиницы</h2>
+    <form class="booking-form" method="post" action="https://echo.htmlacademy.ru">
+      <p class="booking-item">
+        <label for="booking-date-in">Дата заезда:</label>
+        <input type="date" id="booking-date-in" name="arrival-date" value="" placeholder="24 апреля 2017">
+      </p>
+      <p class="booking-item">
+        <label for="booking-date-out">Дата отъезда:</label>
+        <input type="date" id="booking-date-out" name="leaving-date" value="" placeholder="4 июля 2017">
+      </p>
+      <p class="booking-item">
+        <label for="booking-adult">Взрослые:</label>
+        <input type="text" id="booking-adult" name="adult" value="" placeholder="2">
+        <label for="booking-children">Дети</label>
+        <input type="text" id="booking-children" name="children" value="" placeholder="0">
+      </p>
+          <button class="btn btn-submit" type="submit" value="Найти">Найти</button>
     </form>
   </section>
 </body>
