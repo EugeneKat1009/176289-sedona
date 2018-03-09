@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
-
 <body>
-
   <header class="main-header">
     <a href="" class="main-header-logo" aria-label="Город Седона">
-        <img src="img/logo.png" width="138" height="70" alt="Город Седона">
-      </a>
+      <img src="img/logo.png" width="138" height="70" alt="Город Седона">
+    </a>
     <nav class="main-navigation">
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
@@ -21,17 +18,14 @@
       </ul>
     </nav>
   </header>
-
   <main class="container">
     <h1 class="visually-hidden">Иформация о городе Седона</h1>
-
     <section class="about">
       <div class="about-bg">
         <img src="img/intro-1200.jpg" width="1200" height="800" alt="О городе Седона">
       </div>
       <h2 class="features-intro">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="features-intro-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-
       <ul class="reasons-list">
         <li class="reasons-item">
           <h3 class="reasons-title">Настоящий городок</h3>
@@ -82,9 +76,7 @@
         </li>
       </ul>
     </section>
-
     <section class="booking">
-      <h1 class="visually-hidden">Забронировать гостиницу в Седоне</h1>
       <h2 class="booking-title">Заинтересовались?</h2>
       <p class="booking-text">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <button class="btn-search" type="submit">Поиск гостиницы в Седоне</button>
@@ -93,7 +85,6 @@
       </div>
     </section>
   </main>
-
   <footer class="main-footer">
     <p class="hashtag">
       <a href="#">#visitsedona</a>
@@ -106,31 +97,35 @@
     <p class="developed">
       <b>Website by</b>
       <a href="https://htmlacademy.ru/intensive/htmlcss" class="html-academy" aria-label="Разаработано HTMLAcademy">
-          <img src="img/logo-htmlacademy.svg" class="html-academy-logo" width="115" height="41" alt="HTMLAcademy">
-        </a>
+        <img src="img/logo-htmlacademy.svg" class="html-academy-logo" width="115" height="41" alt="HTMLAcademy">
+      </a>
     </p>
   </footer>
-
   <section class="modal modal-booking">
     <h2 class="visually-hidden">Выбор гостиницы</h2>
     <form class="booking-form" method="post" action="https://echo.htmlacademy.ru">
       <p class="booking-item">
         <label for="booking-date-in">Дата заезда:</label>
-        <input type="date" id="booking-date-in" name="arrival-date" value="" placeholder="24 апреля 2017">
+        <input type="text" id="booking-date-in" name="arrival-date" value="" placeholder="24 апреля 2017">
       </p>
       <p class="booking-item">
         <label for="booking-date-out">Дата отъезда:</label>
-        <input type="date" id="booking-date-out" name="leaving-date" value="" placeholder="4 июля 2017">
+        <input type="text" id="booking-date-out" name="leaving-date" value="" placeholder="4 июля 2017">
       </p>
       <p class="booking-item">
         <label for="booking-adult">Взрослые:</label>
+        <button class="booking-btn-adult booking-btn booking-btn-plus" type="button">+</button>
         <input type="text" id="booking-adult" name="adult" value="" placeholder="2">
-        <label for="booking-children">Дети</label>
-        <input type="text" id="booking-children" name="children" value="" placeholder="0">
+        <button class="booking-btn-adult booking-btn booking-btn-minus" type="button">-</button>
       </p>
-          <button class="btn btn-submit" type="submit" value="Найти">Найти</button>
+      <p class="booking-item">
+        <label for="booking-children">Дети</label>
+        <button class="booking-btn-children booking-btn booking-btn-plus" type="button">+</button>
+        <input type="text" id="booking-children" name="children" value="" placeholder="0">
+        <button class="booking-btn-children booking-btn booking-btn-minus" type="button">-</button>
+      </p>
+      <button class="btn btn-submit" type="submit" value="Найти">Найти</button>
     </form>
   </section>
 </body>
-
 </html>
