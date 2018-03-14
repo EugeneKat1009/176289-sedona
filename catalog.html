@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
@@ -38,7 +40,6 @@
               <input class="visually-hidden filter-checkbox" type="checkbox" name="wi-fi" id="filter-wifi">
               <label for="filter-wifi">Wi-Fi</label>
             </li>
-            </ul>
           </ul>
         </fieldset>
         <fieldset>
@@ -65,7 +66,7 @@
             <input class="filter-input" type="text" name="price-max" value="" placeholder="до 3000" id="filter-price-max">
             <label class="visually-hidden" for="filter-price-max">Минимальная стоимость</label><br>
             <input class="filter-range" type="range" name="price-range" value="" min="0" max="3000" id="filter-price-range">
-            <label class="visually-hidden" for="filter-price-range">Стоимость готиницы</label>
+            <label class="visually-hidden" for="filter-price-range">Стоимость гостиницы</label>
         </fieldset>
         <button type="submit" class="btn filter-btn">Показать</button>
       </form>
@@ -78,20 +79,20 @@
       </p>
       <p class="sorting">Сортировка:</p>
       <ul class="sorting-items">
-        <li class="sorting-item">
-          <button class="sort-btn" type="button">По цене</button>
+        <li class="sorting-item-current sorting-item">
+          <a class="sort-btn sort-btn-current" href="#">По цене</a>
         </li>
         <li class="sorting-item">
-          <button class="sort-btn">По типу</button>
+          <a class="sort-btn" href="#">По типу</a>
         </li>
         <li class="sorting-item">
-          <button class="sort-btn" type="button">По рейтингу</button>
+          <a class="sort-btn" href="#">По рейтингу</a>
         </li>
         <li class="sorting-item">
-          <button class="sort-btn sort-up-btn" type="button">up</button>
+          <a class="sort-up-btn sort-btn" href="#">up</a>
         </li>
         <li class="sorting-item">
-          <button class="sort-btn sort-down-btn" type="button">down</button>
+          <a class="sort-down-btn sort-btn" href="#">down</a>
         </li>
       </ul>
     </section>
