@@ -1,12 +1,14 @@
 body {
   margin: 0;
   padding: 0;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333;
   text-transform: uppercase;
+
   background-color: #f2f2f2;
 }
 
@@ -14,7 +16,30 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  outline: 2px solid red;
+}
+
+.main-header-logo {
+  position: absolute;
+  left: 650px;
+}
+
 .main-navigation {
+  display: flex;
+  width: 100%;
   line-height: 26px;
   font-weight: 700;
   color: #000;
@@ -22,9 +47,35 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.site-navigation-left {
+  display: flex;
+  width: 531px;
+  margin-right: 138px;
+}
+
+.site-navigation-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 531px;
+}
+
+.site-navigation-left li {
+  padding-left: 71px;
+  padding-right: 77px;
+}
+
+.site-navigation-right li {
+  padding-right: 72px;
+  padding-left: 92px;
 }
 
 .site-navigation a {
@@ -41,20 +92,38 @@ a {
   opacity: 0.3;
 }
 
-.site-navigation-current a {
+.site-navigation-current a{
   color: #766357;
 }
 
+.about-city {
+  width: 1200px;
+  padding-bottom: 50px;
+}
+.about-bg {
+  width: 1200px;
+  height: 510px;
+  overflow: hidden;
+}
+
 .features-intro {
+  display: block;
+  width: 440px;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
+  margin: 0 auto;
+  padding-top: 59px;
 }
 
 .features-intro-text {
+  display: block;
   line-height: 26px;
   color: #333;
   text-align: center;
+  margin: 0 auto;
+  padding-top: 28px;
+
 }
 
 .reasons-list,
