@@ -60,6 +60,7 @@ a {
   text-align: left;
   margin-left: 6%;
   margin-right: 6%;
+  white-space: nowrap;
 }
 
 .site-navigation li:nth-child(2) {
