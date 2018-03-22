@@ -40,7 +40,6 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0 auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
 }
 
 .main-header-logo {
@@ -244,7 +243,7 @@ input[type="radio"].visually-hidden {
 }
 
 .reasons-title {
-  width: 149.5px;
+  width: 151px;
   margin: 0 auto;
   padding-bottom: 10px;
 }
@@ -322,10 +321,11 @@ input[type="radio"].visually-hidden {
 .modal {
   position: absolute;
   left: 50%;
-  bottom: 220px;
+  bottom: 206px;
   transform: translateX(-50%);
   background-color: #fff;
   width: 568px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.25);
 }
 
 .booking-form {
@@ -336,12 +336,25 @@ input[type="radio"].visually-hidden {
 }
 
 .booking-item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  outline: 1px solid red;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
+}
+
+.booking-item:nth-child(1)::after,
+.booking-item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top: 8px;
+  right: 6px;
+  opacity: 0.5;
+  background-image: url("../img/calendar.svg");
+  background-repeat: no-repeat;
 }
 
 .booking-item:nth-child(3),
@@ -351,13 +364,17 @@ input[type="radio"].visually-hidden {
 }
 
 .booking-item input {
+  display: block;
+  position: relative;
   font: inherit;
-  width: 346px;
+  width: 325px;
   text-transform: uppercase;
+  font-weight: 700;
   color: #000;
   background-color: #f2f2f2;
   border: 2px solid transparent;
-  padding: 5px 0;
+  padding: 5px;
+  padding-left: 13px;
 }
 
 .booking-item input:hover {
@@ -370,15 +387,19 @@ input[type="radio"].visually-hidden {
 }
 
 .booking-item label {
-  display: inline-block;
   font-weight: 700;
   line-height: 26px;
 }
 
+
 .booking-item input:nth-child(3),
 .booking-item input:nth-child(4) {
-  width: 80px;
+  width: 95px;
   text-align: center;
+}
+
+.booking-item:last-of-type label {
+  margin-left: 50px;
 }
 
 .visitors-btn {
@@ -401,13 +422,15 @@ input[type="radio"].visually-hidden {
   font-size: 21px;
   line-height: 26px;
   background-color: #81b3d2;
+  border: none;
 }
 
 .submit-btn {
   display: block;
-  margin-top: 40px;
+  margin-top: 35px;
+  margin-bottom: 15px;
   width: 100%;
-  padding: 15px 0;
+  padding: 16px 0;
 }
 
 .submit-btn:hover,
