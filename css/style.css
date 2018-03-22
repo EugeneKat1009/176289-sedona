@@ -55,7 +55,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: #000;
   background-color: #fff;
-  padding: 15px 73px;
+  padding: 15px 71px;
 }
 
 .site-navigation {
@@ -824,22 +824,18 @@ input[type="radio"].visually-hidden {
 }
 
 .hotel-stars {
-  position: relative;
-  display: block;
-  padding: 0;
+  display: flex;
+  justify-content: flex-end;
   width: 110px;
-  height: 27px;
+  margin-top: 4px;
 }
 
-.hotel-stars::before {
-  content: "";
-  position: absolute;
-  top: 45%;
-  right: -1px;
-  transform: translateY(-50%);
+.hotel-stars span {
   width: 18px;
   height: 17px;
+  margin-left: 5px;
   background-image: url(../img/rating-star.svg);
+  background-repeat: no-repeat;
 }
 
 .main-footer {
