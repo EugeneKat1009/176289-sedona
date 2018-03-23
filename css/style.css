@@ -67,9 +67,8 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation li {
-  width: 20%;
+  min-width: 20%;
   text-align: left;
-  white-space: nowrap;
 }
 
 .site-navigation li:nth-child(2) {
@@ -171,7 +170,7 @@ input[type="radio"].visually-hidden {
   line-height: 21px;
   color: #333;
   text-align: center;
-  flex-basis: 30%;
+  flex-basis: 33.3%;
 }
 
 .reasons-item {
@@ -182,6 +181,9 @@ input[type="radio"].visually-hidden {
 .features-list {
   padding: 0;
   margin: 0;
+}
+
+.features-item {
   padding-top: 162px;
   padding-bottom: 80px;
 }
@@ -230,8 +232,8 @@ input[type="radio"].visually-hidden {
   padding: 0;
   margin: 0;
   padding-top: 25px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .reasons-title,
@@ -266,10 +268,10 @@ input[type="radio"].visually-hidden {
 
 .booking {
   background-color: #fff;
+  text-align: center;
 }
 
 .booking-title {
-  width: 440px;
   margin: 0 auto;
   padding-top: 52px;
   padding-bottom: 23px;
@@ -279,7 +281,6 @@ input[type="radio"].visually-hidden {
 }
 
 .booking-text {
-  width: 440px;
   margin: 0 auto;
   padding-bottom: 47px;
   line-height: 24px;
@@ -288,7 +289,6 @@ input[type="radio"].visually-hidden {
 }
 
 .btn {
-  display: inline-block;
   font: inherit;
   font-weight: 700;
   text-align: center;
@@ -309,8 +309,6 @@ input[type="radio"].visually-hidden {
 }
 
 .search-btn {
-  display: block;
-  margin: 0 auto;
   padding: 30px 140px;
   text-align: center;
   font-size: 21px;
@@ -344,37 +342,34 @@ input[type="radio"].visually-hidden {
   margin-bottom: 19px;
 }
 
-.booking-item:nth-child(1)::after,
-.booking-item:nth-child(2)::after {
-  content: "";
+.arrival-icon {
   position: absolute;
-  width: 23px;
-  height: 23px;
-  top: 8px;
-  right: 6px;
-  opacity: 0.5;
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
+  top: 6px;
+  right: 4px;
+  background-color: transparent;
+  border: none;
 }
 
-.booking-item:nth-child(3),
-.booking-item:nth-child(4) {
-  width: 50%;
-  margin-top: 15px;
+.arrival-icon:hover path,
+.arrival-icon:focus path {
+  fill: #000;
+}
+
+.arrival-icon:active path {
+  fill: #81b3d2;
 }
 
 .booking-item input {
-  display: block;
-  position: relative;
   font: inherit;
-  width: 325px;
+  width: 290px;
   text-transform: uppercase;
   font-weight: 700;
   color: #000;
   background-color: #f2f2f2;
   border: 2px solid transparent;
   padding: 5px;
-  padding-left: 13px;
+  padding-right: 40px;
+  padding-left: 12px;
 }
 
 .booking-item input:hover {
@@ -391,15 +386,44 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
 }
 
-
-.booking-item input:nth-child(3),
-.booking-item input:nth-child(4) {
-  width: 95px;
+.booking-item:nth-child(3) input {
+  width: 110px;
   text-align: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.booking-item:last-of-type label {
-  margin-left: 50px;
+.booking-item:nth-child(3) label {
+  margin: 0;
+  padding: 0;
+}
+
+.booking-btn {
+  font-size: 24px;
+  font-weight: 700;
+  color: #a9a9a9;
+  background-color: transparent;
+  border: none;
+}
+
+.booking-adult  {
+  position: relative;
+}
+
+.minus-icon {
+  position: absolute;
+
+}
+
+.plus-icon {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+  color: #a9a9a9;
+  top: 6px;
+  right: 4px;
+  background-color: transparent;
+  border: none;
 }
 
 .visitors-btn {
@@ -426,7 +450,6 @@ input[type="radio"].visually-hidden {
 }
 
 .submit-btn {
-  display: block;
   margin-top: 35px;
   margin-bottom: 15px;
   width: 100%;
@@ -873,19 +896,18 @@ input[type="radio"].visually-hidden {
 
 .footer {
   display: flex;
+  align-items: center;
   padding: 36px 0;
   background-color: #fff;
 }
 
 .hashtag {
-  padding-top: 10px;
   flex-basis: 33.3%;
   margin: 0;
   text-align: center;
 }
 
 .developed {
-  padding-top: 5px;
   flex-basis: 33.3%;
   margin: 0;
   text-align: center;
@@ -893,7 +915,7 @@ input[type="radio"].visually-hidden {
 
 .hashtag a {
   color: #000;
-  font-size:21px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
