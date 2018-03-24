@@ -57,13 +57,12 @@
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-checkbox" type="checkbox" name="appartment" id="filter-appartment" checked>
-                <label for="filter-appartment">Аппартаменты</label>
+                <label for="filter-appartment">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
-          <div class="filter-range">
-            <fieldset class="filter-items filter-inputs">
-              <legend>Стоимость в сутки (Р):</legend>
+          <fieldset class="filter-items filter-range">
+            <legend>Стоимость в сутки (Р):</legend>
               <div class="price-controls">
                 <label class="min-price">от <input type="text" name="min-price" value="0"></label>
                 <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
@@ -75,9 +74,8 @@
               <div class="range-toggle range-toggle-min"></div>
               <div class="range-toggle range-toggle-max"></div>
             </div>
-            </fieldset>
-          <button class="btn filter-btn" type="submit">Показать</button>
-        </div>
+            <button class="btn filter-btn" type="submit">Показать</button>
+          </fieldset>
         </form>
       </section>
       <section class="search-results">
@@ -89,7 +87,7 @@
         <p class="sorting">Сортировка:</p>
         <ul class="sorting-items">
           <li class="sorting-item-current sorting-item">
-            <a class="sort-btn sort-btn-current" href="#">По цене</a>
+            <a class="sort-btn" href="#">По цене</a>
           </li>
           <li class="sorting-item">
             <a class="sort-btn" href="#">По типу</a>
@@ -98,21 +96,16 @@
             <a class="sort-btn" href="#">По рейтингу</a>
           </li>
         </ul>
-        <ul class="toggle">
-          <li class="sorting-item">
-            <a class="toggle-btn toggle-btn-current" href="#"><span class="visually-hidden">up</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/>
-              </svg>
-            </a>
-          </li>
-          <li class="sorting-item">
-            <a class="toggle-btn" href="#"><span class="visually-hidden">down</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/>
-              </svg>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <p class="order">
+          <a class="order-btn" href="#"><span class="visually-hidden">up</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/>
+            </svg>
+          </a>
+          <a class="order-btn order-btn-current" href="#"><span class="visually-hidden">down</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/>
+            </svg>
+          </a>
+        </p>
       </section>
       <section class="hotels">
         <h2 class="visually-hidden">Подходящие гостиницы</h2>
@@ -135,11 +128,11 @@
               </p>
             </div>
             <div class="rating">
-              <div class="hotel-stars">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+              <div class="hotel-stars" tabindex="1" aria-label="Гостиница 4 звезды">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
               </div>
               <div class="hotel-rating">Рейтинг: 8,5</div>
             </div>
@@ -162,10 +155,10 @@
               </p>
             </div>
             <div class="rating">
-              <div class="hotel-stars">
-                <span></span>
-                <span></span>
-                <span></span>
+              <div class="hotel-stars" tabindex="2" aria-label="Мотель 3 звезды">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
               </div>
               <div class="hotel-rating">Рейтинг: 8,9</div>
             </div>
@@ -188,9 +181,9 @@
               </p>
             </div>
             <div class="rating">
-              <div class="hotel-stars">
-                <span></span>
-                <span></span>
+              <div class="hotel-stars" tabindex="3" aria-label="Апартаменты 2 звезды">
+                <span class="star"></span>
+                <span class="star"></span>
               </div>
               <div class="hotel-rating">Рейтинг: 9,2</div>
             </div>
