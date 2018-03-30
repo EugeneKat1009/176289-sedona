@@ -171,7 +171,6 @@ input[type="radio"].visually-hidden {
   background-color: #fff;
 }
 
-
 .photocard {
   position: relative;
   width: 66.7%;
@@ -185,7 +184,6 @@ input[type="radio"].visually-hidden {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-
 }
 
 .reasons-item,
