@@ -114,13 +114,12 @@ input[type="radio"].visually-hidden {
 
 .about-bg img {
   display: block;
-  width: 100%;
 }
 
 .about-bg {
   position: relative;
-  margin-bottom: 60px;
   width: 100%;
+  margin-bottom: 60px;
 }
 
 .about-bg::after {
@@ -130,11 +129,12 @@ input[type="radio"].visually-hidden {
   height: 57px;
   bottom: 0;
   background-image: url("../img/intro-shape-1200.png");
+  background-size: 100% 57px;
   background-repeat: no-repeat;
 }
 
 .features-intro {
-  width: 37%;
+  width: 440px;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -171,20 +171,26 @@ input[type="radio"].visually-hidden {
   background-color: #fff;
 }
 
-.photocard img {
-  display: block;
-}
 
 .photocard {
-  -ms-flex-preferred-size: 66.7%;
-      flex-basis: 66.7%;
+  position: relative;
+  width: 66.7%;
   overflow: hidden;
+}
+
+.photocard img {
+  position: absolute;
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+
 }
 
 .reasons-item,
 .features-item {
-  -ms-flex-preferred-size: 33.3%;
-      flex-basis: 33.3%;
+  max-width: 33.3%;
   text-align: center;
   line-height: 21px;
   color: #333;
@@ -265,21 +271,21 @@ input[type="radio"].visually-hidden {
 .reasons-title {
   margin: 0 auto;
   padding-bottom: 10px;
-  width: 38%;
+  max-width: 38%;
 }
 
 .reasons-text {
   margin: 0 auto;
   padding-top: 8px;
-  width: 270px;
+  max-width: 270px;
 }
 
 .reasons-item-blue .reasons-text {
-  width: 305px;
+  max-width: 305px;
 }
 
 .reasons-item-blue .reasons-title {
-  width: 151px;
+  max-width: 151px;
 }
 
 .reasons-item-blue {
@@ -425,28 +431,6 @@ input[type="radio"].visually-hidden {
    }
 }
 
-@-webkit-keyframes outlines {
-  0% {
-    -webkit-box-shadow: 0 0 3px 2px rgba(226, 26, 26, 0.5);
-            box-shadow: 0 0 3px 2px rgba(226, 26, 26, 0.5);
-  }
-  100% {
-    -webkit-box-shadow: 0 0 1px 1px rgba(226, 26, 26, 0.5);
-            box-shadow: 0 0 1px 1px rgba(226, 26, 26, 0.5);
-  }
-}
-
-@keyframes outlines {
-  0% {
-    -webkit-box-shadow: 0 0 3px 2px rgba(226, 26, 26, 0.5);
-            box-shadow: 0 0 3px 2px rgba(226, 26, 26, 0.5);
-  }
-  100% {
-    -webkit-box-shadow: 0 0 1px 1px rgba(226, 26, 26, 0.5);
-            box-shadow: 0 0 1px 1px rgba(226, 26, 26, 0.5);
-  }
-}
-
 .animation {
   -webkit-animation: hiding 0.6s ease-out;
           animation: hiding 0.6s ease-out;
@@ -461,12 +445,6 @@ input[type="radio"].visually-hidden {
           animation: shake 0.6s;
 }
 
-.js-booking-item input[name=arrival],
-.js-booking-item input[name=leaving] {
-  -webkit-animation: outlines 2s forwards ease-out;
-          animation: outlines 2s forwards ease-out;
-}
-
 .booking-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,7 +452,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 43px 55px;
-  width: 458px;
+  max-width: 458px;
 }
 
 .booking-item {
@@ -630,7 +608,7 @@ input[type="radio"].visually-hidden {
   padding-left: 40px;
 }
 
-.filter fieldset:nth-child(3) {
+.filter-range {
   margin-left: auto;
 }
 
@@ -1147,6 +1125,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   z-index: 2;
   border: none;
+  width: 100%;
+  height: 593px;
 }
 
 .map img {
