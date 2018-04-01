@@ -271,6 +271,34 @@ input[type="radio"].visually-hidden {
   width: 155px;
 }
 
+.reasons-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.reasons-number::before,
+.reasons-number::after {
+  content: "";
+  width: 9px;
+  height: 1px;
+  background: #333;
+}
+
+.reasons-number-blue::before,
+.reasons-number-blue::after {
+  background: #fff;
+}
+
+.reasons-number::before {
+  margin-right: 6px;
+}
+
+.reasons-number::after {
+  margin-left: 6px;
+}
+
 .reasons-text {
   margin: 0 auto;
   padding-top: 8px;
