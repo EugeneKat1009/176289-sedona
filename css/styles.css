@@ -903,12 +903,6 @@ input[type="radio"].visually-hidden {
   padding-right: 30px;
 }
 
-.order order-btn:last-of-type {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
 .sorting-item a {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
@@ -919,13 +913,13 @@ input[type="radio"].visually-hidden {
 }
 
 .order {
+  display: flex;
   padding: 0;
   margin: 0;
   margin-left: auto;
 }
 
 .order a {
-  margin-left: 8px;
   border-bottom: none;
 }
 
@@ -946,6 +940,10 @@ input[type="radio"].visually-hidden {
 .order-btn:active path,
 .order-btn-current path {
   fill: #81b3d2;
+}
+
+.order-btn-current {
+  margin-left: 12px;
 }
 
 .sorting-item-current a {
