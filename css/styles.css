@@ -268,7 +268,7 @@ input[type="radio"].visually-hidden {
 .reasons-title {
   margin: 0 auto;
   padding-bottom: 10px;
-  width: 150px;
+  width: 155px;
 }
 
 .reasons-text {
@@ -350,7 +350,7 @@ input[type="radio"].visually-hidden {
   0%,
   100% {
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+            transform: translateX(0);
   }
   10%,
   30%,
@@ -358,14 +358,14 @@ input[type="radio"].visually-hidden {
   70%,
   90% {
     -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%,
   40%,
   60%,
   80% {
     -webkit-transform: translateX(10px);
-    transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -373,7 +373,7 @@ input[type="radio"].visually-hidden {
   0%,
   100% {
     -webkit-transform: translateX(0);
-    transform: translateX(0);
+            transform: translateX(0);
   }
   10%,
   30%,
@@ -381,43 +381,43 @@ input[type="radio"].visually-hidden {
   70%,
   90% {
     -webkit-transform: translateX(-10px);
-    transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%,
   40%,
   60%,
   80% {
     -webkit-transform: translateX(10px);
-    transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @-webkit-keyframes hiding {
   0%,
   50% {
-       -webkit-transform: translate(0, -120px);
-               transform: translate(0, -120px);
-               opacity: 0;
-   }
-   100% {
-       -webkit-transform: translate(0, 0px);
-               transform: translate(0, 0px);
-               opacity: 1;
-   }
+    -webkit-transform: translate(0, -120px);
+            transform: translate(0, -120px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+            opacity: 1;
+  }
 }
 
 @keyframes hiding {
   0%,
   50% {
-       -webkit-transform: translate(0, -120px);
-               transform: translate(0, -120px);
-               opacity: 0;
-   }
-   100% {
-       -webkit-transform: translate(0, 0px);
-               transform: translate(0, 0px);
-               opacity: 1;
-   }
+    -webkit-transform: translate(0, -120px);
+            transform: translate(0, -120px);
+            opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+            opacity: 1;
+  }
 }
 
 .animation {
@@ -515,6 +515,7 @@ input[type="radio"].visually-hidden {
 .calendar-btn:active path {
   fill: #81b3d2;
 }
+
 .people-amount-btn {
   width: 38px;
   height: 38px;
